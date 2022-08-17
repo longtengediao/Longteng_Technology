@@ -1,0 +1,58 @@
+.XZbox{
+    margin-left: 8%;
+    position: relative;
+    width: 30%;
+    height: 50%;
+    background: rgba(0,0,0,0.75);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 25%;
+}
+.XZbox::after{
+    content: '';
+    position: absolute;
+    width: 160%;
+    height: 160%;
+    background-image: conic-gradient(transparent,transparent,transparent,#d400d4);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+.XZbox::before{
+    content: '';
+    position: absolute;
+    width: 160%;
+    height: 160%;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.CHenShi>.XZbox>span{
+    position: absolute;
+    border-radius: 16px;
+    inset: 5px;
+    background: #0c1022;
+    z-index: 1;
+}
+.CHenShi>.XZbox>h2{
+    padding: 0;
+    text-indent: 0.5em;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 10em;
+    transition: all 0.3s linear;
+}
+.CHenShi>.XZbox:hover h2{
+    font-size: 11em;
+    transition: all 0.3s linear;
+}

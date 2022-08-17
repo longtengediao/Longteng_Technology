@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="shortcut icon" href="img/LT.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css-dl/stare-right.css">
+    <link rel="stylesheet" href="css-sy/PageDottom.css">
+    <link rel="stylesheet" href="css-dl/log.css">
+    <script>
+        window.onload = function () {
+            document.getElementById("password").addEventListener('input', function () {
+                var _this = this;
+                var newPassword = _this.value;
+                var oldPassword = _this.getAttribute("password");
+                var deta = newPassword.length-oldPassword.length;
+
+                var truePassword = "";
+                var p = _this.selectionEnd;
+
+                for(var i=0; i<newPassword.length; i++){
+                    var c = newPassword.charAt(i);
+                    if(i<p && c!='●'){
+                        truePassword += c;
+                    }else if(i<p && c=='●'){
+                        truePassword +=  oldPassword.charAt(i);
+                    }else {
+                        truePassword += oldPassword.substr(oldPassword.length-newPassword.length+p,newPassword.length-p);
+                        break;
+                    }
+
+                }
+                newPassword = truePassword.replace(/\S/g, '●');
+
+                _this.setAttribute('password', truePassword);
+                _this.value = newPassword;
+                _this.selectionEnd = p;
+                _this.selectionStart = p;
+            },false);
+        }
+        $(selector).on('input', function () {
+});
+    </script>
+    <script type="text/javascript">
+        function display(id){  
+            var traget=document.getElementById(id);  
+            if(traget.style.display=="none"){  
+                traget.style.display="";  
+            }else{  
+                traget.style.display="none";  
+          }  
+       }  
+    </script>
+    <!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        // jQuery代码
+        $(document).ready(function () {
+            $("#a1").click(function () {
+                $("#one").show();// 显示
+                $("#two").hide();
+                $("#three").hide();// 隐藏
+                $("#four").hide();
+            });
+            $("#a2").click(function () {
+                $("#one").hide();// 显示
+                $("#two").show();
+                $("#three").hide();// 隐藏
+                $("#four").hide();
+            });
+            $("#a3").click(function () {
+                $("#one").hide();// 显示
+                $("#two").hide();
+                $("#three").show();// 隐藏
+                $("#four").hide();
+            });
+            $("#a4").click(function () {
+                $("#one").hide();// 显示
+                $("#two").hide();
+                $("#three").hide();// 隐藏
+                $("#four").show();
+            });
+        });
+    </script> -->
+</head>
+<body>
+    <div class="AllBody">
+        <div class="title" id="SHOUye">
+            <div class="RitSt YHhezi GUdin">
+                <a href="#" title="龙腾科技" target="_blank" class="YHhezi TUp">
+                    <div class="PosT YHhezi"></div>
+                </a>
+                <div class="WenB">
+                   <div class="SY" >
+                        <div class="NEIbu TooNow tooltip" >
+                            <a href="龙腾科技.html" target="_blank" class="WZ "><span>首页</span></a>
+                            <div class="tooltiptext">
+                                <a href="#SHOUye" class="ALL_TSxZ">总和</a>
+                                <a href="#MenX" class="ALL_TSxZ">梦想</a>
+                                <a href="#" class="ALL_TSxZ">科技</a>
+                                <a href="#" class="ALL_TSxZ">未来</a>
+                                <a href="#" class="ALL_TSxZ">守护</a>
+                                <a href="#" class="ALL_TSxZ">我们</a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="SY">
+                    <div class="NEIbu tooltip Now">
+                        <a href="#" target="_blank" class="WZ"><span>我的</span></a>
+                        <div class="tooltiptext">
+                            <a href="#" class="ALL_TSxZ">注册</a>
+                            <a href="#" class="ALL_TSxZ">登录</a>
+                            <a href="#" class="ALL_TSxZ">个人</a>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="SY_Long ">
+                    <div class="NEIbu TooNow Ltooltip">
+                        <a href="#" target="_blank" class="WZ"><span>相关产品</span></a>
+                        <div class="Ltooltiptext">
+                            <a href="#" class="LALL_TSxZ">龙腾库</a>
+                            <a href="#" class="LALL_TSxZ">保护台</a>
+                            <a href="#" class="LALL_TSxZ">合计台</a>
+                            <a href="#" class="LALL_TSxZ">游戏台</a>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="SY_Long">
+                    <div class="NEIbu TooNow Ltooltip">
+                        <a href="#" target="_blank" class="WZ"><span>关于我们</span></a>
+                        <div class="Ltooltiptext">
+                            <a href="#" class="LALL_TSxZ">创历年</a>
+                            <a href="#" class="LALL_TSxZ">计划册</a>
+                            <a href="#" class="LALL_TSxZ">合作项</a>
+                            <a href="#" class="LALL_TSxZ">线下地</a>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="SY_Long">
+                    <div class="NEIbu TooNow Ltooltip">
+                        <a href="#" target="_blank" class="WZ"><span>加入我们</span></a>
+                        <div class="Ltooltiptext">
+                            <a href="#" class="LALL_TSxZ">兼职工</a>
+                            <a href="#" class="LALL_TSxZ">全职工</a>
+                            <a href="#" class="LALL_TSxZ">合&nbsp;作</a>
+                            <a href="#" class="LALL_TSxZ">地&nbsp;址</a>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="SY_Long">
+                    <div class="NEIbuImg">
+                        <div class="SFdL"><a href="#" target="_blank" class="KYDQ">未登录</a></div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="Container">
+            <div class="Loader TheFirst">
+                <span>
+                    <div class="WZ_dl">
+                        <p>登录</p>
+                        <p>login</p>
+                        </form>
+                    </div>
+                <div class="ZHmm">
+                        <form action="#" method="post" name="denlu">
+                            <input type="text" placeholder="账号/龙腾号/身份证" maxlength="18">
+                            <input type="password" placeholder="密码" id="password" maxlength="18">
+                            <button>登录</button>
+                </div>
+                </span>
+            </div>
+            <div class="LongTen">
+                <a href="#">———————还没有账号？点我注册</a>
+            </div>
+            <div class="HEton">
+                <p><h5>登录即表示同意：</h5><a href="#">龙腾科技协议</a></p>
+                <p><h5>使用即表示同意：</h5><a href="#">用户使用协议</a></p>
+            </div>
+        <div class="ZXbd">
+            <div class="Jri">
+                <div class="XUANZE">
+                    <input type="submit" value="" onclick="display('one')">
+                    <input type="submit" value="" onclick="display('two')">
+                    <input type="submit" value="" onclick="display('three')">
+                    <input type="submit" value="" onclick="display('four')">
+                </div>
+                <div class="HEZIimg" id="one" style="display:none ;">
+                        <a href="#" class="ALLTP">
+                            <p>今日</p>
+                            <p>消息</p>
+                            <p>JINRIXIAOXI</p>
+                        </a>
+                </div>
+                <div class="HEZIimg" id="two" style="display:none ;">
+                    <p>明日</p>
+                    <p>消息</p>
+                    <p>MINRIXIAOXI</p>
+                </div>
+                <div class="HEZIimg" id="three" style="display:none ;">
+                    <p>后日</p>
+                    <p>消息</p>
+                    <p>HOURIXIAOXI</p>
+                </div>
+                <div class="HEZIimg" id="four" style="display:none ;">
+                    <p>大后日</p>
+                    <p>消息</p>
+                    <p>DAHOURIXIAOXI</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

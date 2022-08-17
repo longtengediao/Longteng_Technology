@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ZXbd{
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    display: inline-block;
+    width: 60%;
+    height: 80%;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 7%;
+}
+.Container{
+    width: 100%;
+    margin-top: 60px;
+    height: calc(100% - 60px);
+    /* max-height: 100%; */
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Container .Loader{
+    position: relative;
+    left: 45%;
+    width: 150px;
+    height: 150px;
+    /* margin: 20%; */
+    margin-top: 10%;
+    margin-left: 20%;
+    float: left;
+}
+.Container .Loader.TheFirst span{
+    position: absolute;
+    width: 350%;
+    height: 350%;
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    border-radius: 30px;
+    transition: all 0.3s linear;
+    border: 2px solid rgba(65, 64, 64, 0.473);
+}
+.Container .Loader.TheFirst span:hover{
+    box-shadow: 5px 5px 8px 10px rgba(32, 32, 32, 0.732);
+    transition: all 0.3s linear;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    background: rgba(233, 233, 233, 0.05);
+}
+@media (max-width: 1920px) and (min-width: 768px) {
+    html {
+      zoom: 75%;
+    }
+    @-ms-viewport {
+      width: 1920px;
+    }
+}
+.Container .Loader.TheFirst .WZ_dl{
+    height: 25%;
+    width: 100%;
+    /* background-color: black; */
+    text-align: center;
+}
+.Container .Loader.TheFirst .WZ_dl p{
+    display: inline-block;
+    width: 100%;
+    padding-top: 2%;
+    font-size: 3em;
+    color: white;
+    font-family: '微软雅黑','黑体';
+}
+.Container .Loader.TheFirst .WZ_dl p:nth-child(2){
+    padding-top: 0.1em;
+    height: 30%;
+    font-size: 2em;
+    padding: 0;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+.Container .Loader.TheFirst .ZHmm{
+    height: 75%;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+}
+.Container .Loader.TheFirst input{
+    display: inline-block;
+    margin-left: 10%;
+    width: 80%;
+    height: 40%;
+    border-radius: 20px;
+    text-indent: 15px;
+    outline: none;
+    border: none;
+    margin-bottom: 10%;
+    font-size: 1.2em;
+}
+.Container .Loader.TheFirst input:focus{
+    outline: 3px solid lightgreen;
+}
+.Container .Loader.TheFirst button{
+    border: none;
+    height: 30%;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    font-size: 1.7em;
+    transition: all 0.3s linear;
+}
+.Container .Loader.TheFirst button:hover{
+    background-color: lightgreen;
+    transition: all 0.3s linear;
+}
+.Container .LongTen{
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    left: 65%;
+    top: 17%;
+}
+.Container .LongTen>a:hover{
+    color: orange;
+}
+.Container .HEton{
+    position: absolute;
+    /* background-color: black; */
+    width: 27%;
+    height: 90px;
+    top: 75%;
+    left: 65%;
+    margin-top: 1%;
+    padding-left: 20px;
+}
+.Container .HEton h5{
+    font-size: 20px;
+    color: white;
+    display: inline;
+}
+.Container .HEton>a{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.Container .HEton>a:hover{
+    color: orange;
+    text-decoration: none;
+}
+.ZXbd .Jri{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.ZXbd .Jri>.HEZIimg{
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s linear;
+    background-image: url(../img/最新报道.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.ZXbd a:hover .HEZIimg{
+    width: 103%;
+    height: 103%;
+    transition: all 0.2s linear;
+}
+.ZXbd .Jri>.HEZIimg p{
+    padding-top: 20%;
+    font-size: 140px;
+    font-family: '微软雅黑','Courier New', 'Courier, monospace';
+    color: #fff;
+    padding-left: 9%;
+}
+.ZXbd .Jri>.HEZIimg p:nth-child(2){
+    padding: 0;
+    padding-left: 19%;
+}
+.ZXbd .Jri>.HEZIimg p:nth-child(3){
+    padding: 0;
+    font-size: 100px;
+    padding-left: 5%;
+}
+.ZXbd .Jri .XUANZE{
+    display: none;
+    position: absolute;
+    top: 93%;
+    width: 100%;
+    height: 7%;
+    /* background-color: black; */
+    float: left;
+}
+.ZXbd .Jri:hover .XUANZE{
+    display: block;
+}
+.ZXbd .Jri .XUANZE>input{
+    height: 50px;
+    margin: 0 10%;
+    margin-top: 0.5%;
+    width:50px ;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.HEZIimg .ALLTP{
+    float: left;
+    width: 100%;
+    height: 100%;
+}

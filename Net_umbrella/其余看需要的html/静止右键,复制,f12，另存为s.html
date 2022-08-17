@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function click(){ 
+        　　if(event.button==2){ 
+        　　　　alert( '本网站欢迎您 !!'); 
+        　　} 
+        } 
+        document.onmousedown=click
+        </script>
+        <script>
+            window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+        // 判断是否按下F12，F12键码为123
+        if (event.keyCode == 123) { 
+            event.preventDefault(); // 阻止默认事件行为
+            window.event.returnValue = false;
+            $(function(){
+    var obj = setTimeout(定向的页面, 1); // 每2秒刷新一次页面
+});
+        }
+}
+        //禁用调试工具
+        var threshold = 160; // 打开控制台的宽或高阈值
+        // 每秒检查一次
+        var check = setInterval(function() {
+        if (window.outerWidth - window.innerWidth > threshold || 
+        window.outerHeight - window.innerHeight > threshold) {
+        // 如果打开控制台，则刷新页面
+        window.location.reload(true);
+        }
+        window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+ // 判断是否按下s，s键码为123
+ if (event.keyCode == 83) {
+     event.preventDefault(); // 阻止默认事件行为
+     window.event.returnValue = false;
+     $(function(){
+var obj = setTimeout(定向的页面, 1); // 每2秒刷新一次页面
+});
+ }
+}
+        }, 100)
+   
+</script>
+<!-- 禁止保存 -->
+ <script>
+//     window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+//  // 判断是否按下s，s键码为123
+//  if (event.keyCode == 83) {
+//      event.preventDefault(); // 阻止默认事件行为
+//      window.event.returnValue = false;
+//      $(function(){
+// var obj = setTimeout(定向的页面, 1); // 每2秒刷新一次页面
+// });
+//  }
+// }
+// </script> 
+</head>
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">11111
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+ 
+        function display(id){  
+            var traget=document.getElementById(id);  
+            if(traget.style.display=="none"){  
+                traget.style.display="";  
+            }else{  
+                traget.style.display="none";  
+          }  
+       }  
+    </script>
+</head>
+<body>
+    <input type="submit" value="在线支付" onclick="display('lb')">
+    <div id="lb" style="display:none">
+        <font>div属性：style ="display:none" 默认隐藏div</font>
+    </div>
+</body>
+</html>
